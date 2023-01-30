@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 8080:8080
 
-CMD ["yarn", "index.js"]
+CMD ["yarn", "start"]
