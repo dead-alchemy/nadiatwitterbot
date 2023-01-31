@@ -1,9 +1,10 @@
 require("dotenv").config();
+const {schedule} = require("@netlify/functions");
 
 const {twitterClient} = require("../client");
 const {canned_tweets} = require("../consts");
 
-module.exports.isopod_tweet = async () => {
+const isopod_tweet = async () => {
 	try {
 		const picked_tweet = Math.floor(Math.random() * canned_tweets.length);
 		await twitterClient.v2.tweet(canned_tweets[picked_tweet]);
@@ -12,3 +13,5 @@ module.exports.isopod_tweet = async () => {
 		console.log(e);
 	}
 };
+
+exports.handler = schedule("06 14 * * 0", isopod_tweet);
