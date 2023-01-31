@@ -1,7 +1,7 @@
 require("dotenv").config();
-
 var cron = require("node-cron");
+var tweet = require("./functions/tweet");
 
-cron.schedule("39 17 * * 0", () => {
-	console.log("running a task every minute");
+cron.schedule("06 14 * * 0", () => {
+	tweet.isopod_tweet();
 });
