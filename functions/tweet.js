@@ -14,4 +14,4 @@ const isopod_tweet = async () => {
 	}
 };
 
-exports.handler = schedule("06 14 * * 0", isopod_tweet);
+exports.handler = schedule("06 23 * * 0", isopod_tweet);
