@@ -1,12 +1,19 @@
 {
-  "name": "nadiatwitterbot",
-  "version": "1",
-  "description": "a simple bot to remind someone to feed their isopods",
-  "main": "index.js",
-  "author": "David Nicholas",
-  "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "dotenv": "^16.0.3"
-  }
+	"name": "nadiatwitterbot",
+	"version": "1",
+	"description": "a simple bot to remind someone to feed their isopods",
+	"main": "index.js",
+	"author": "David Nicholas",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"start": "node ./index.js",
+		"dev": "node ./dev.index.js"
+	},
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"node-cron": "^3.0.2",
+		"nodemon": "^2.0.20",
+		"twitter-api-v2": "^1.14.1"
+	}
 }
