@@ -1,27 +1,15 @@
 require("dotenv").config();
 
-const rwClient = require("./functions/tweets.js");
+const {twitterClient} = require("./client");
+const {canned_tweets} = require("./consts");
 
-const afunction = async () => {
+const tweet = async () => {
 	try {
-		await rwClient.v1.tweet("Good Morning Friends!");
-		console.log("tweet successfully created");
+		const picked_tweet = Math.floor(Math.random() * canned_tweets.length);
+		await twitterClient.v2.tweet(canned_tweets[picked_tweet]);
 	} catch (e) {
-		console.error(e);
+		console.log(e);
 	}
-	//console.log(tweet);
-
-	//const picked_tweet = Math.floor(Math.random() * fns.canned_tweets.length);
-	// fns.client.v2
-	// 	.tweet("This tweet was written by a bot")
-	// 	.then((val) => {
-	// 		console.log(val);
-	// 		console.log("success");
-	// 	})
-	// 	.catch((err) => {
-	// 		console.log(err);
-	// 	});
-	//console.log(fns.canned_tweets[picked_tweet]);
 };
 
-afunction();
+tweet();
