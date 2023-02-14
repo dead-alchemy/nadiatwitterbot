@@ -14,4 +14,4 @@ const test_tweet = async () => {
 	return;
 };
 
-exports.handler = schedule("36 5 * * *", test_tweet);
+exports.handler = schedule("38 5 * * *", test_tweet);
