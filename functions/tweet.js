@@ -9,6 +9,9 @@ const isopod_tweet = async () => {
 		const picked_tweet = Math.floor(Math.random() * canned_tweets.length);
 		await twitterClient.v2.tweet(canned_tweets[picked_tweet]);
 		console.log("tweeted: " + canned_tweets[picked_tweet]);
+		return {
+			statusCode: 200,
+		};
 	} catch (e) {
 		console.log(e);
 	}
