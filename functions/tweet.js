@@ -14,8 +14,10 @@ const isopod_tweet = async () => {
 		};
 	} catch (e) {
 		console.log(e);
+		return {
+			statusCode: 200,
+		};
 	}
-	return;
 };
 
 exports.handler = schedule("15 19 * * 0", isopod_tweet);
