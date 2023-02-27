@@ -5,4 +5,11 @@ module.exports.canned_tweets = [
 	`IDK if it's isopod, pill bug, potato bug, or rollie pollie, it's time for ${process.env.TWITTER_USERNAME} to feed them.`,
 	`Wow, I am really hungry. Maybe if I ask ${process.env.TWITTER_USERNAME} to feed me they will.`,
 	`Isopods can get to be 6 to 30 inches in length. If ${process.env.TWITTER_USERNAME} feeds theres maybe I can get that big.`,
+	`Pst..... hey ${process.env.TWITTER_USERNAME}. Can you please feed us. We are hungry little bugs.`,
+	`I am just here bugging ${process.env.TWITTER_USERNAME} to feed us. Thank you for making us happy.`,
+	`I'm a little rollie pollie bot. I am here to ask ${process.env.TWITTER_USERNAME} to make my friends bigger rollie pollies.`,
+	`I wonder what is for lunch today. Hey ${process.env.TWITTER_USERNAME} do you know what we can expect?`,
+	`I know what isopods eat, but what does a isoopod bot whose purpose it to remind ${process.env.TWITTER_USERNAME} to feed bugs to eat?`,
+	`Just bugging ${process.env.TWITTER_USERNAME} to feed their pill bugs.`,
+	`Oh my. Look at the time. It's time for ${process.env.TWITTER_USERNAME} to feed their isopods!`,
 ];
